@@ -14,7 +14,7 @@ const fadeUp = {
 
 const socials = [
   { icon: Mail, label: 'Email', value: 'lucymbewe28@gmail.com', href: 'mailto:lucymbewe28@gmail.com' },
-  { icon: Code2, label: 'GitHub', value: '@lucyjohnson', href: '#' },
+  { icon: Code2, label: 'GitHub', value: 'LucyJohnson58', href: '#' },
   { icon: Briefcase, label: 'LinkedIn', value: 'Lucy Johnson', href: '#' },
   { icon: MessageCircle, label: 'WhatsApp', value: 'Chat with me', href: '#' },
 ]
@@ -107,7 +107,7 @@ export default function Contact() {
                 <CheckCircle2 size={40} className="text-purple-lite mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Message sent!</h3>
                 <p className="text-text-dim text-sm">
-                  Thanks for reaching out — I'll get back to you soon.
+                  Thanks for reaching out , I'll get back to you soon.
                 </p>
               </div>
             ) : (

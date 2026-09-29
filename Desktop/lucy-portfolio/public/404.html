@@ -2,11 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>Lucy Johnson — Portfolio</title>
     <script>
-      // Redirect to the correct route — GitHub Pages SPA fix
-      sessionStorage.redirect = location.href;
+      // GitHub Pages SPA fix — preserves the /lucy-portfolio/ base path
+      var pathSegmentsToKeep = 1; // keep "/lucy-portfolio"
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
     </script>
-    <meta http-equiv="refresh" content="0;URL='/lucy-portfolio/'" />
   </head>
   <body></body>
 </html>
