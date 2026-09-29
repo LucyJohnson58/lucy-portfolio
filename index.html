@@ -5,21 +5,44 @@
     <link rel="icon" type="image/svg+xml" href="/lucy-portfolio/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucy Johnson — Software Developer & Cybersecurity</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<script>
-  (function () {
-    var redirect = sessionStorage.redirect;
-    delete sessionStorage.redirect;
-    if (redirect && redirect !== location.href) {
-      history.replaceState(null, null, redirect);
-    }
-  })();
-</script>
 
-    <script type="module" crossorigin src="/lucy-portfolio/assets/index-DnBl9Lzi.js"></script>
-    <link rel="stylesheet" crossorigin href="/lucy-portfolio/assets/index-CRimra1r.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SEO -->
+    <meta name="description" content="Lucy Johnson — Final-year Computer Science student from Mzuzu, Malawi. Building secure web systems, exploring machine learning, and creating clean software." />
+    <meta name="author" content="Lucy Johnson" />
+
+    <!-- Open Graph (WhatsApp / LinkedIn / Facebook previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lucy Johnson — Software Developer & Cybersecurity" />
+    <meta property="og:description" content="Final-year CS student building secure, useful software from Mzuzu, Malawi." />
+    <meta property="og:url" content="https://lucyjohnson58.github.io/lucy-portfolio/" />
+    <meta property="og:image" content="https://lucyjohnson58.github.io/lucy-portfolio/og-image.png" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lucy Johnson — Software Developer & Cybersecurity" />
+    <meta name="twitter:description" content="Final-year CS student building secure, useful software from Mzuzu, Malawi." />
+    <meta name="twitter:image" content="https://lucyjohnson58.github.io/lucy-portfolio/og-image.png" />
+
+    <!-- SPA redirect handler for GitHub Pages -->
+    <script>
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
+    <script type="module" crossorigin src="/lucy-portfolio/assets/index-CoQzepBg.js"></script>
+    <link rel="stylesheet" crossorigin href="/lucy-portfolio/assets/index-B3Ga0-b_.css">
   </head>
   <body>
     <div id="root"></div>
